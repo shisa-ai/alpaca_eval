@@ -1,0 +1,18 @@
+shisa-v1-llama3-70b:
+  prompt_template: "shisa-v1-llama3-70b/prompt.txt"
+  fn_completions: "huggingface_local_completions"
+  completions_kwargs:
+    model_name: "shisa-ai/shisa-v1-llama3-70b"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+      load_in_4bit: True
+      trust_remote_code: True
+      low_cpu_mem_usage: True
+    max_new_tokens: 2048
+    batch_size: 1
+    temperature: 0.7
+    top_p: 0.95
+    repetition_penalty: 1.15
+    do_sample: True
+  pretty_name: "Shisa V1 Llama3 70B"
+  link: "https://shisa.ai"

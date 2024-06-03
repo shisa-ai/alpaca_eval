@@ -1,0 +1,14 @@
+shisa-v1-llama3-8b:
+  prompt_template: "shisa-v1-llama3-8b/prompt.txt"
+  fn_completions: "huggingface_local_completions"
+  completions_kwargs:
+    model_name: "shisa-ai/shisa-v1-llama3-8b"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 4096
+    temperature: 0.7
+    top_p: 0.95
+    repetition_penalty: 1.15
+    do_sample: True
+  pretty_name: "Shisa V1 Llama3 8B"
+  link: "https://shisa.ai"
